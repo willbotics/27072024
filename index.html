@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will & Kat's Wedding</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <header>
+        <section class="top-section" id="top-section">
+            <div class="square-box">
+                <div class="text">
+                    <p>Will</p>
+                    <p>&</p>
+                    <p>Kat's</p>
+                    <p>Wedding</p>
+                </div>
+            </div>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="#video-section">Top</a></li>
+                <li><a href="#event-section">Events</a></li>
+                <li><a href="#travel-section">Travel</a></li>
+                <li><a href="#stay-section">Stay</a></li>
+                <li><a href="#land-section">Saysutshun</a></li>
+                <li><a href="#faq-section">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="video-section">
+        <video autoplay muted loop id="video-background">
+            <source src="video/wave-trimmed.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- <section class="video-section">
+        <video id="video-background">
+            <source src="video/glide.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+  
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var video = document.getElementById('video-background');
+        
+        // Function to play the video and unmute it
+        function playVideo() {
+            video.play();
+            video.muted = false;
+            
+            // Remove the event listener after the first click to avoid multiple playbacks
+            document.removeEventListener('click', playVideo);
+        }
+    
+        // Add a click event listener to the document to trigger video playback
+        document.addEventListener('click', playVideo);
+    });
+    </script> -->
+
+    
+    <section class="section" id="event-section">
+
+        <h2>Events</h2>
+        <p><strong>Friday:</strong><br>BBQ & Costume Party 5:00pm</p>
+        <img src="gif/alien.gif" alt="alien-gif" class="gif-image">
+
+        <p><strong>Saturday:</strong><br>Ceremony 1:00pm<br>Reception 5:00pm</p>
+        <img src="gif/sun.gif" alt="moon-gif" class="gif-image">
+
+        <p id="countdown-clock"></p> <!-- Placeholder for countdown clock -->
+        <img src="images/beso_01.png" alt="Leaf Image" class="section-image">
+
+    </section>
+    
+
+    <section class="photo-section parallax" id="photo-section">
+    </section>
+
+    <!-- Travel Section -->
+    <section class="section center-text-left" id="travel-section">
+
+        <h2>Travel</h2>
+        <img src="gif/fly.gif" alt="moon-gif" class="gif-image">
+        <h3><strong>Saysutshun Provincial Park (Newcastle Island)</strong></h3>
+        <p>The wedding will be taking place on <strong>Saysutshun island</strong>, a small car-free island 10 minutes by ferry from Nanaimo.</p>
+        <p><strong>Note: You do not need to take this ferry</strong></p>
+        <p> Feel free to come via canoe, kayak, fishing rig,  motorboat, surfboard, </p>
+        <p>brand new sail boat you named Breaking Wind and will be circling the wedding in, paddleboard, plywood constructed barge, etc.</p>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12699.99747932755!2d-123.95108739191197!3d49.181332992494426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488a172e64a694d%3A0xe5a502fb67e729cd!2sSaysutshun%20Provincial%20Park!5e0!3m2!1sen!2sca!4v1711479949315!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3><strong>Getting here:</strong></h3>
+        <p>There is a 10-minute ferry from Nanaimo to the island every half hour (daily).</p>
+        <p>We will be chartering a late-night ferry for people who stay late on the day of the wedding</p>
+        <h3><strong>Getting to Nanaimo:</strong></h3>
+        <p>Bike, walk, bus, fly, or ferry - run (if you must).</p>
+        <p> For those coming over from the mainland - book your ferries from Horseshoe Bay <a href="https://www.bcferries.com/book-sailings" target="_blank">here</a>.</p>
+        <h3><strong>Saysuthsun ferry:</strong></h3>
+        <p>Ferries run from Maffeo Sutton Park.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20862.20969621763!2d-123.934499!3d49.185833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5488a15eeca0c129%3A0xffb77d119abfc670!2sMaffeo%20Sutton%20Park!5e0!3m2!1sen!2sca!4v1711481450764!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>More information <a href="https://newcastleisland.ca/ferry-info" target="_blank">here</a>.</p>
+        <img src="images/beso_02.png" alt="Leaf Image" class="section-image">
+
+    
+    </section>
+
+    
+    <section class="photo-section-01 parallax" id="photo-section-01">
+    </section>
+    <!-- Places to Stay Section -->
+    <section class="section center-text-left" id="stay-section">
+        <img src="images/beso_03.png" alt="Leaf Image" class="section-image">
+        <h2>Places to Stay</h2>
+        <p>Camping is welcomed and encouraged. You will need to bring all your own camping gear. </p>
+        <p>More camping details can be found <a href="https://newcastleisland.ca/camping-info"target="_blank">here</a></p>
+        <p>We have a group campsite reserved which has space for everyone! </p>
+        <p>Please let us know if you plan to camp with us if you haven’t already.</p>
+        <h3>Nanaimo hotels</h3> 
+        <img src="images/hotels.png" alt="Hotels Map" class="map-image">
+
+        <p><strong>Fig 1.1 Hotels close to the ferry dock at a range of prices</strong></p>
+        <p>Please note we have stayed at none of these hotels so cannot actually vouch for them but according to the internet, they are decent.</p>
+       
+        <ul>
+            <li> <a href="https://www.coasthotels.com/coast-bastion-hotel" target="_blank"> Coast Baston</a></li>
+            <li> <a href="https://www.wyndhamhotels.com/en-ca/ramada/nanaimo-british-columbia/ramada-nanaimo/overview" target="_blank"> Ramada by Wyndham</a></li>
+            <li> <a href="https://www.marriott.com/en-us/hotels/ycdcy-courtyard-nanaimo/overview/" target="_blank"> Courtyard by Marriot</a></li>
+            <li> <a href="https://www.dorchesternanaimo.com/" target="_blank"> Best Western Dorchester Hotel</a></li>
+            <li> <a href="https://www.airbnb.ca/s/Nanaimo--Canada/homes?adults=1&place_id=ChIJ4QybURv7iFQRUYSjcwL3PB0&refinement_paths%5B%5D=%2Fhomes&checkin=2024-07-26&checkout=2024-07-28&tab_id=home_tab&query=Nanaimo%2C%20Canada&flexible_trip_lengths%5B%5D=one_week&monthly_start_date=2024-04-01&monthly_length=3&monthly_end_date=2024-07-01&price_filter_input_type=0&price_filter_num_nights=2&channel=EXPLORE&ne_lat=49.27981106142694&ne_lng=-123.887756155376&sw_lat=49.10751246303859&sw_lng=-124.01395413091063&zoom=13.304640911686544&zoom_level=13.304640911686544&search_by_map=true&search_type=user_map_move" target="_blank"> Air Bnb Nanaimo</a></li>
+        </ul>
+        <img src="images/beso_03.png" alt="Leaf Image" class="section-image">
+
+    </section>
+    <section class="photo-section-02 parallax" id="photo-section-02">
+    </section>
+    <!-- The Land Section -->
+    <section class="section" id="land-section">
+        <img src="images/beso_04.png" alt="Leaf Image" class="section-image">
+        <h2>The Land</h2>
+        <p>This celebration will be taking place on Saysutshun, territory of the Snuneymuxw People.</p>
+        <p>Read more about the culture and history of the land <a href="https://newcastleisland.ca/culture-and-history" target="_blank">here</a>.</p>
+        <img src="images/beso_04.png" alt="Leaf Image" class="section-image">
+    </section>
+    <section class="photo-section-03 parallax" id="photo-section-03">
+    </section>
+    <!-- FAQs Section -->
+    <section class="section" id="faq-section">
+        <img src="images/beso_01.png" alt="Leaf Image" class="section-image">
+        <h2>FAQs</h2>
+        <div class="faq-container">
+            <div class="faq">
+                <h3>Can I bring my Kids?</h3>
+                <p>Yes please feel free to bring your kids</p>
+            </div>
+            <div class="faq">
+                <h3>What type of facilities are on Saysutshun?</h3>
+                <p>If you haven't checked it out yet, read through the great guides on the islands homepage <a href="https://newcastleisland.ca/" target="_blank">here</a></p>
+            </div>
+            <div class="faq">
+                <h3>Will Beso be there? He has offended me in the past</h3>
+                <p>Sadly Beso will not be attending our gathering but will be very much there in spirit</p>
+            </div>
+            <!-- Add more questions and answers as needed -->
+        </div>
+        <img src="images/beso_01.png" alt="Leaf Image" class="section-image">
+
+    </section>
+    <section class="photo-section-04 parallax" id="photo-section-03">
+    </section>
+        <!-- Swell Forecast Section -->
+    <section class="section" id="swell-forecast-section">
+        <img src="images/beso_03.png" alt="Leaf Image" class="section-image">
+
+        <h2>Swell Forecast</h2>
+        <!-- Embed the weather map -->
+        <iframe width="650" height="450" src="https://embed.windy.com/embed2.html?lat=49.282&lon=-123.040&detailLat=49.282&detailLon=-123.040&width=650&height=450&zoom=5&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=true&metricWind=default&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>    </section>
+        <a name="windy-webcam-timelapse-player" data-id="1565824142" data-play="day" href="https://windy.com/webcams/1565824142" target="_blank">Area C: Long Beach Lodge Resort</a><script async type="text/javascript" src="https://webcams.windy.com/webcams/public/embed/script/player.js"></script>
+        <img src="images/beso_03.png" alt="Leaf Image" class="section-image">
+
+    </section>
+    <section class="photo-section-05 parallax" id="photo-section-03">
+    </section>
+    <section class="footer-section">
+        <div class="logo">
+            <h5>K &amp; W</h5>
+            <!-- <hr class="line"> -->
+            <h5><span id="wedding-date">27.07.2024</span></p>
+        </div>
+
+    </section>
+    
+    <section class="video-section">
+        <video autoplay muted loop id="video-background">
+            <source src="video/wave-trimmed.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <footer>
+        <h6>&copy; 2024 Will & Kat's Wedding</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
