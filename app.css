@@ -1,0 +1,345 @@
+/* Reset default browser styles */ h1, h2, p {
+    margin: 20;
+    padding: 0;
+}
+
+.section {
+    text-align: center; /* Center align the text within each section */
+    margin-top: 100px; /* Add a large margin above each section */
+}
+.section-image {
+    display: block;
+    margin: 0 auto 20px; /* Center the image horizontally and add space below it */
+    width: 100px; /* Set the width of the image */
+    height: auto; /* Let the height adjust automatically to maintain aspect ratio */
+}
+
+/* Define a new font family with your custom font */
+@font-face {
+    font-family: 'Hemingway';
+    src: url('fonts/Heming Variable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Comic CAT';
+    src: url('fonts/Comic_CAT.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Workbench';
+    src: url('fonts/Workbench-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* FONT STUFF */
+/* Apply the custom font to elements */
+body,p {
+    
+    font-family: 'Hemingway', sans-serif; /* Use the custom font or fallback to a sans-serif font */
+    font-size: 22px;
+}
+
+/* Apply the custom font to specific elements */
+
+h1,h2, h3, h4{
+    font-family: 'Comic CAT', sans-serif; /* Use the custom font or fallback to a sans-serif font */
+}
+.logo {
+    text-align: center; /* Center the logo */
+}
+
+h5 {
+    font-family: 'Comic CAT', sans-serif; /* Use the custom font or fallback to a sans-serif font */
+    font-size: 72px; /* Set font size for K & W */
+    margin-bottom: 10px; /* Add margin below the text */
+}
+
+#line {
+    width: fit-content; /* Set width to fit content */
+    margin: auto; /* Center the line */
+}
+
+#line::before {
+    content: ""; /* Empty content for line */
+    display: block;
+    /* border-top: 2px solid black; Style the line */
+    width: fit-content; /* Set width to fit content */
+    margin: 0 auto; /* Center the line */
+}
+
+
+h6{
+    font-size: 26px; /* Set font size for K & W */
+
+    font-family: 'Workbench', sans-serif; /* Use the custom font or fallback to a sans-serif font */
+}
+/* Set background and font colors */
+body{
+    margin: 0;
+    background-color: white; /* Set background color to white */
+}
+
+footer {
+    border-top: 2px solid black; /* Add black border to header, footer, and each section */
+}
+header {
+    position: sticky;
+    top: 0;
+    background-color: white; /* Set background color of header */
+    z-index: 1000; /* Set a high z-index to ensure header stays above other content */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px;
+    width: 100%;
+
+}
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    padding: 10px 20px; /* Add padding to the header */
+}
+
+header p {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 0 20px; /* Add padding to the header */
+}
+nav {
+    display: flex;
+    justify-content: flex-end; /* Align the menu to the right */
+    flex-grow: 1; /* Allow the nav to grow and occupy remaining space */
+    margin-right: 30px; /* Leave a few pixels of space on the right side */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.section:last-child {
+    border-bottom: 2px solid black; /* Add black border to the last section */
+}
+
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 24px;
+}
+
+/* Top section styles */
+/* .top-section {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    /* left: calc(1/16 * 100vw); 
+    z-index: 1; 
+} */
+/* Adjust position of top section */
+header .top-section {
+    top: 0; /* Align top of top-section with top of header */
+    left: 10%; 
+    transform: translateX(-50%);
+}
+.top-section {
+    position: relative;
+    background-color: white; /* Set background color of top section */
+    padding: 10px; /* Add padding to the top section */
+    border: 2px solid black; /* Add border to the top section */
+}
+
+
+.square-box {
+    width: 100px; /* Width of the square box */
+    height: 100px; /* Height of the square box */
+    background-color: #fff; /* White background */
+    /* border: 2px solid #000; Black border */
+    text-align: center; /* Center text horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.square-box .text {
+    margin-top: 0px; /* Adjust spacing from the top */
+}
+
+.square-box .text p {
+    font-size: 16px;
+}
+
+/* Video section styles */
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+}
+.photo-section,
+.photo-section-01,
+.photo-section-02,
+.photo-section-03,
+.photo-section-04,
+.photo-section-05 {
+    height: calc(100vh - 200px); /* Subtract the height of the fixed header */
+    background-size: cover; /* Cover the entire section with the background image */
+    background-attachment: fixed; /* Ensure the background image remains fixed as the user scrolls */
+    background-position: center top; /* Align the top of the background image with the top of the section */
+}
+.photo-section {
+    background-image: url('images/CUTE.jpeg'); /* Set the background image */
+}
+.photo-section-01 {
+    background-image: url('images/CUTE_04.jpeg'); /* Set the background image */
+}
+.photo-section-02 {
+    background-image: url('images/CUTE_01.jpeg'); /* Set the background image */
+}
+.photo-section-03 {
+    background-image: url('images/CUTE_06.jpeg'); /* Set the background image */
+}
+.photo-section-04 {
+    background-image: url('images/CUTE_05.jpeg');/* Set the background image */
+}
+.photo-section-05 {
+    background-image: url('images/CUTE_03.png');/* Set the background image */
+}
+
+
+
+
+
+.section {
+    text-align: center; /* Center align the text within each section */
+}
+
+.section h2 {
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.section p {
+    margin-bottom: 20px; /* Add some space below each paragraph */
+}
+
+.parallax-section .background {
+ background-attachment: fixed; /* Ensure the background image remains fixed */
+    background-position: center; /* Center the background image initially */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+} */
+
+
+/* Add similar rules for other sections */
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Adjust text color to ensure readability */
+}
+/* Center the FAQ section */
+#faq-section {
+    text-align: center;
+}
+
+/* Style for each FAQ */
+.faq {
+    max-width: 600px; /* Adjust the width as needed */
+    margin: 0 auto 20px; /* Center the FAQ horizontally and add margin */
+    text-align: left; /* Align text to the left within the centered area */
+}
+
+/* Style for FAQ question */
+.faq h3 {
+    font-size: 20px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 5px; /* Add spacing below the question */
+}
+
+/* Style for FAQ answer */
+.faq p {
+    font-size: 16px; /* Adjust font size as needed */
+}
+.center-text-left {
+    text-align: center; /* Center align the text horizontally */
+}
+
+.center-text-left p,
+.center-text-left h3,
+.center-text-left iframe,
+.center-text-left ul,
+.center-text-left img {
+    text-align: left; /* Left align the text within the centered area */
+    margin: 0 auto 20px; /* Center the element horizontally and add margin */
+    max-width: 800px; /* Set a maximum width for better readability */
+}
+/* Style for countdown clock */
+#countdown-clock {
+    font-size: 36px; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    /* Adjust header styles for smaller screens */
+    header {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    /* Adjust top section styles for smaller screens */
+    .top-section {
+        top: 0; /* Align top of top-section with top of header */
+        left: 50%; /* Align top section to center horizontally */
+        transform: translateX(-50%); /* Center top section horizontally */
+    }
+
+    /* Adjust video section styles for smaller screens */
+    .video-section {
+        height: 50vh; /* Reduce height of video section for smaller screens */
+    }
+
+    /* Adjust photo section styles for smaller screens */
+    .photo-section,
+    .photo-section-01,
+    .photo-section-02,
+    .photo-section-03,
+    .photo-section-04,
+    .photo-section-05 {
+        height: 50vh; /* Keep the height of the photo sections for smaller screens */
+        background-size: contain; /* Ensure the entire background image is visible */
+        background-position: center; /* Center the background image horizontally */
+        background-repeat: no-repeat; /* Prevent the background image from repeating */
+    }
+}
