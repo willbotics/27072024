@@ -38,7 +38,7 @@
 body,p {
     
     font-family: 'Hemingway', sans-serif; /* Use the custom font or fallback to a sans-serif font */
-    font-size: 22px;
+    font-size: 16px;
 }
 
 /* Apply the custom font to specific elements */
@@ -212,12 +212,15 @@ header .top-section {
 .photo-section-02,
 .photo-section-03,
 .photo-section-04,
-.photo-section-05 {
-    height: calc(100vh - 200px); /* Subtract the height of the fixed header */
-    background-size: cover; /* Cover the entire section with the background image */
-    background-attachment: fixed; /* Ensure the background image remains fixed as the user scrolls */
-    background-position: center top; /* Align the top of the background image with the top of the section */
-}
+.photo-section-05 {        
+        height: calc(100vh - 200px); /* Subtract the height of the fixed header */
+        background-size: cover; /* Cover the entire section with the background image */
+        background-position: center; /* Center the background image */
+        background-repeat: no-repeat; /* Prevent the background image from repeating */
+        background-attachment: fixed; /* Ensure the background image remains fixed as the user scrolls */
+        max-width: 100%; /* Limit the maximum width of the image to the container width */
+        width:100%;
+    }
 .photo-section {
     background-image: url('images/CUTE.jpeg'); /* Set the background image */
 }
@@ -252,12 +255,12 @@ header .top-section {
 .section p {
     margin-bottom: 20px; /* Add some space below each paragraph */
 }
-
+/* 
 .parallax-section .background {
  background-attachment: fixed; /* Ensure the background image remains fixed */
     background-position: center; /* Center the background image initially */
     background-repeat: no-repeat; /* Prevent the background from repeating */
-} */
+} */ */
 
 
 /* Add similar rules for other sections */
@@ -329,17 +332,35 @@ header .top-section {
     .video-section {
         height: 50vh; /* Reduce height of video section for smaller screens */
     }
+}
 
-    /* Adjust photo section styles for smaller screens */
+.parallax-section .background {
+ /* Adjust the background-attachment property to fixed */
+    background-attachment: fixed;
+    /* Set the background-size to cover */
+    background-size: cover;
+    /* Set the background-repeat to no-repeat */
+    background-repeat: no-repeat;
+    /* Set the height of the parallax section */
+    height: 100vh; /* Adjust as needed */
+    /* Set the position to relative */
+    position: relative;
+    /* Set the z-index to ensure the content appears above the background */
+    z-index: 1;
+}   
     .photo-section,
     .photo-section-01,
     .photo-section-02,
     .photo-section-03,
     .photo-section-04,
     .photo-section-05 {
-        height: 50vh; /* Keep the height of the photo sections for smaller screens */
-        background-size: contain; /* Ensure the entire background image is visible */
-        background-position: center; /* Center the background image horizontally */
-        background-repeat: no-repeat; /* Prevent the background image from repeating */
+        /* Adjust the background-position property */
+        background-position: center;
+        /* Adjust the background-size property */
+        background-size: cover;
+        /* Adjust the background-attachment property */
+        background-attachment: fixed;
+        /* Set the height of the parallax section */
+        height: 300vh; /* Adjust as needed */
     }
-}
+    /* Adjust photo section styles for smaller screens */
