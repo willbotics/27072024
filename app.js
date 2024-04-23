@@ -56,6 +56,18 @@ function updateCountdownClock() {
     var daysUntilWedding = calculateDaysUntilWedding();
     document.getElementById("countdown-clock").textContent = "Days until wedding: " + daysUntilWedding;
 }
+// Get the video element
+var video = document.getElementById('video-background');
 
+// Check if the user is on a mobile device
+var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+// Add an event listener for user interaction
+document.addEventListener('click', function() {
+    // If user is on a mobile device, play the video
+    if (isMobile) {
+        video.play();
+    }
+});
 // Update countdown clock on page load
 updateCountdownClock();
