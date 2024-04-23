@@ -187,6 +187,8 @@ header .top-section {
 
 .square-box .text p {
     font-size: 16px;
+    margin-top: 4px; /* Adjust spacing from the top */
+
 }
 
 /* Video section styles */
@@ -199,21 +201,24 @@ header .top-section {
 
 #video-background {
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     min-width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+
+    min-height: 50%;
+    max-height: 90%;
     width: auto;
     height: auto;
     transform: translate(-50%, -50%);
 }
-.photo-section,
+ .photo-section,
 .photo-section-01,
 .photo-section-02,
 .photo-section-03,
 .photo-section-04,
 .photo-section-05 {        
-        height: calc(100vh - 200px); /* Subtract the height of the fixed header */
+        /* height: calc(100vh - 200px); /*Subtract the height of the fixed header */
         background-size: cover; /* Cover the entire section with the background image */
         background-position: center; /* Center the background image */
         background-repeat: no-repeat; /* Prevent the background image from repeating */
@@ -255,15 +260,6 @@ header .top-section {
 .section p {
     margin-bottom: 20px; /* Add some space below each paragraph */
 }
-/* 
-.parallax-section .background {
- background-attachment: fixed; /* Ensure the background image remains fixed */
-    background-position: center; /* Center the background image initially */
-    background-repeat: no-repeat; /* Prevent the background from repeating */
-} */ */
-
-
-/* Add similar rules for other sections */
 
 .content {
     position: absolute;
@@ -348,6 +344,19 @@ header .top-section {
     /* Set the z-index to ensure the content appears above the background */
     z-index: 1;
 }   
+/* Disable parallax effect on mobile devices */
+@media only screen and (max-width: 768px) {
+    .photo-section,
+    .photo-section-01,
+    .photo-section-02,
+    .photo-section-03,
+    .photo-section-04,
+    .photo-section-05 {
+        background-attachment: scroll; /* Override background-attachment to scroll */
+        background-size: cover; /* Set background-size to cover */
+        background-position: center; /* Center the background image */
+    }
+}
     .photo-section,
     .photo-section-01,
     .photo-section-02,
@@ -357,10 +366,12 @@ header .top-section {
         /* Adjust the background-position property */
         background-position: center;
         /* Adjust the background-size property */
-        background-size: cover;
+        background-size: contain;
         /* Adjust the background-attachment property */
-        background-attachment: fixed;
+        /* background-attachment: fixed; */
         /* Set the height of the parallax section */
-        height: 300vh; /* Adjust as needed */
+        height: 80vh; /* Adjust as needed */
+        /* width: 70vw; Adjust as needed */
+
     }
     /* Adjust photo section styles for smaller screens */
